@@ -14,26 +14,14 @@ const ExpenseForm = (props) => {
 
     const titleChangeHandler = event => {
         setEnteredTitle(event.target.value)
-        // setUserInput({
-        //     ...userInput,
-        //     enteredTitle: event.target.value
-        // })
     }
 
     const amountChangeHandler = event => {
         setEnteredAmount(event.target.value)
-        // setUserInput({
-        //     ...userInput,
-        //     enteredAmount: event.target.value
-        // })
     }
 
     const dateChangeHandler = event => {
         setEnteredDate(event.target.value)
-        // setUserInput({
-        //     ...userInput,
-        //     enteredDate: event.target.value
-        // })
     }
 
     const submitHandler = (event) => {
@@ -83,6 +71,7 @@ const ExpenseForm = (props) => {
                 </div>
             </div>
             <div className="new-expense__actions">
+                <button onClick={props.handleToggle}>Cancel</button>
                 <button type="submit">Add Expense</button>
             </div>
         </form>
