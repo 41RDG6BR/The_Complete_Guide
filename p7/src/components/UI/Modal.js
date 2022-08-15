@@ -14,7 +14,6 @@ const ModalOverlay = props => {
 }
 
 const portalElement = document.getElementById('overlays')
-console.log(portalElement, 'portalElement')
 
 const Modal = props => {
     return <Fragment>
